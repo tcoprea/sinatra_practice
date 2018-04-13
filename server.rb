@@ -8,5 +8,6 @@ get '/party' do
 end
 
 get '/' do
-  return "hello from Heroku."
+  return "We are learning about the server/client model. This is my first app!
+  PS, I love James Roche!"
 end
