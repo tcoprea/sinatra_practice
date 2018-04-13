@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'httparty'
 
+set :public_folder, File.dirname(__FILE__) + '/static'
+
 get '/party' do
   url = 'http://example.com'
   kitty = HTTParty.get(url)
