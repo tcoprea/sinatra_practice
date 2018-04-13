@@ -4,7 +4,7 @@ require 'httparty'
 get '/party' do
   url = 'http://example.com'
   kitty = HTTParty.get(url)
-  kitty.inspect
+  kitty.body
 end
 
 get '/' do
